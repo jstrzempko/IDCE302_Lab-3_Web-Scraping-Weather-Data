@@ -1,2 +1,8 @@
-# lab-3-web-scraping-weather-data-jstrzempko
-lab-3-web-scrapping-weather-data-jstrzempko created by GitHub Classroom 
+# Lab 3 – Web Scraping Weather Data
+
+This script extracts live weather conditions from the National Weather Service (NWS) website for a given location in the United States. The Jupyter notebook titled "Jess_Strzempko_Weather-Scraping-Weather-Data_Lab3.ipynb" is based on the script "weather-scraping.py," with both included in this repo. The Jupyter notebook uses the latitude and longitude values for Austin, TX to generate an NWS URL through string concatenation. The URL is used to retrieve the webpage and a BeautifulSoup object with the response from the URL is created. With access to the contents of the webpage, the script locates the element titled "current_conditions_detail," extracts the text, and returns it in a printed concatenation of strings. Information provided is the Humidity, Wind Speed, Barometer, Dewpoint, Visibility, Heat Index, and Last Updated Information. 
+
+When editing the existing weather-scraping.py script, I entered "current_conditions_details" with an additional "s" on the end of the string and received the error: AttributeError: 'NoneType' object has no attribute 'text'. I first printed the variable "weather_conditions_details" and used the type function which returned None. I looked on Stack Overflow for answers (https://stackoverflow.com/questions/40146128/beautifulsoup-returns-none-even-though-the-element-exists) before returning to the NWS URL I was working with and copying and pasting the desired id. This resolved the issue and only after I did so did I realize that it was a typo that gave me the error. 
+
+## The Code
+Users can download and run the python script "Jess_Strzempko_Weather-Scraping-Weather-Data_Lab3.ipynb" in Colab notebooks. The script currently runs to give current weather conditions in Austin, TX, but can be edit to the user's desired location within the United States by changing the latitude and longitude values. If problems are encountered, users can contact Jess Strzempko at JeStrzempko@clarku.edu for more help and further information.
